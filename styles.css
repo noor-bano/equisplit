@@ -1,0 +1,157 @@
+
+:root {
+    --blue: #155679;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #6db473;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+header h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #FFF67E;
+    margin-bottom: 1rem;
+}
+header h2{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+main h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#addition{
+    display: flex;
+}
+
+input,button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#names{
+    flex: 1 1 0%;
+    background-color: #6db473;
+    padding: 1rem;
+    border-radius: 1rem;
+    
+    color: white;
+    font-size: 1.25rem ;
+}
+
+#names::placeholder{
+    color: white;
+    margin: 0 auto;
+}
+
+#addpeople{
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-right: 22rem;
+    transition: 0.4s;
+    
+}
+
+#addpeople:hover{
+    opacity: 0.8;
+}
+ 
+#addpeople:active{
+    opacity: 0.6;
+}
+
+main{
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.name-list{
+    padding: 1rem;
+}
+
+.name-list h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgb(37, 61, 17);
+    margin-bottom: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+#name{
+    width: 300px;
+}
+
+#names .name{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ceef82;
+    padding: 1rem 12rem 1rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+#names .name .content .text{
+    background-color:#ceef82;
+    font-size: 1.125rem;
+    width: 100%;
+    flex: 1 1 0%;
+    display: block;
+    transition: 0.4s;
+}
+#names .name .content{
+    background-color: #ceef82;
+}
+
+#names .name .content .text:not(:read-only) {
+    color:azure;
+}
+ #names .name .action{
+    display: flex;
+    margin: 0 -0.5rem;
+    background-color: #ceef82;
+ }
+
+ .name .action button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+ }
+
+ .name .action button:hover{
+    opacity: 0.8;
+}
+ 
+#name .action button:active{
+    opacity: 0.6;
+}
+#name .action {
+    background-color: #ceef82 ;
+    font-size: 1.125rem;
+    max-width: 1rem;
+   
+}
